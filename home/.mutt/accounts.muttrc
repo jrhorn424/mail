@@ -1,0 +1,29 @@
+set spoolfile = "+INBOX"
+set mbox      = "+Archive"
+set postponed = "+Drafts"
+set record    = "+Sent Items"
+set my_trash  = "+Trash"
+set my_junk   = "+Junk Mail"
+
+set realname = "Jeffrey Horn"
+set from     = "jeff@jrhorn.me"
+alternates     jeff@jrhorn.me hello@jrhorn.me jeffh@generalassemb.ly jeffh@ga.co
+
+set sendmail      = "/usr/local/bin/msmtp -a fastmail"
+set sendmail_wait = 0
+
+mailboxes +INBOX \
+          +\+SaneBulk \
+          +\+SaneCommunity \
+          +\+SaneDate \
+          +\+SaneDeals \
+          +\+SaneGithub \
+          +\+SaneLater \
+          +\+SaneLearning \
+          +\+SaneNews \
+          +\+SaneSocial
+
+macro index,pager ! "<save-message>$my_junk<enter>"
+
+macro index,pager d "<save-message>$my_trash<enter>"
+folder-hook $my_trash 'macro index d <delete-message>'
