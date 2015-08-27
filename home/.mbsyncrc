@@ -26,7 +26,7 @@ Slave :fastmail-local:INBOX
 Channel fastmail-rest
 Master :fastmail-remote:INBOX/
 Slave :fastmail-local:
-Pattern * !INBOX/sent
+Pattern *
 
 Group fastmail
 Channel fastmail-inbox
