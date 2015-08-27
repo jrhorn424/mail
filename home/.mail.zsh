@@ -1,0 +1,1 @@
+export MAILDIR="$HOME/.mail"
