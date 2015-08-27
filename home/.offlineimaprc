@@ -14,6 +14,7 @@ status_backend = sqlite
 [Repository Fastmail-Local]
 type = Maildir
 localfolders = ~/.mail/jeff-jrhorn.me
+nametrans = nt_local
 
 [Repository Fastmail-Remote]
 type = IMAP
@@ -23,3 +24,5 @@ cert_fingerprint = 958B1601563AEF92607A41EB5BAD22E3CACE8431
 remoteport = 993
 remoteuser = jrhorn424@fastmail.fm
 remotepasseval = get_keychain_pass(account="jrhorn424@fastmail.fm", server="mail.messagingengine.com")
+nametrans = nt_remote
+folderfilter = is_included
