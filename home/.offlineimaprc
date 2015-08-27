@@ -13,7 +13,7 @@ status_backend = sqlite
 
 [Repository Fastmail-Local]
 type = Maildir
-localfolders = ~/.mail/jeff-jrhorn.me
+localfolders = ~/.mail
 nametrans = nt_local
 
 [Repository Fastmail-Remote]
