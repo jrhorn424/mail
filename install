@@ -1,0 +1,2 @@
+brew install mutt --with-confirm-attachment-patch --with-s-lang --HEAD
+brew install mu isync msmtp
