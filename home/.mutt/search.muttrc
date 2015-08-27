@@ -1,0 +1,3 @@
+macro index "\Cs" "<shell-escape>read -p'mu query: ' x; \
+      mu find --clearlinks --linksdir ~/.mail/mu-search --format links \$x<enter>\
+      <change-folder-readonly>~/.mail/mu-search\n" "mu find"

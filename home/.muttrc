@@ -33,7 +33,7 @@ source ~/.mutt/views/index.muttrc                          # index view options
 source ~/.mutt/views/pager.muttrc                          # pager view options
 source ~/.mutt/views/compose.muttrc                        # compose view options
 source ~/.mutt/bindings.muttrc                             # index bindings
-source ~/.mutt/contacts.muttrc                             # configure contacts queries
+source ~/.mutt/search.muttrc                               # mu bindings for mail and contacts
 source ~/.mutt/colors/mutt-colors-solarized-dark-16.muttrc # color theme
 
 # Quit displays folder view
