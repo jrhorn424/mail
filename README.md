@@ -11,6 +11,9 @@ Dependencies
 * [`isync/mbsync`](http://isync.sourceforge.net): synchronize IMAP accounts
 * [`msmtp`](http://msmtp.sourceforge.net): SMTP client and mail relay
 
+Installation
+------------
+
 ```
 homeshick clone jrhorn424/mail
 homeshick cd mail
