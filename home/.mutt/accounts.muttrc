@@ -21,7 +21,8 @@ mailboxes +INBOX \
           +\+SaneLater \
           +\+SaneLearning \
           +\+SaneNews \
-          +\+SaneSocial
+          +\+SaneSocial \
+          +Notes
 
 macro index,pager ! "<save-message>$my_junk<enter>"
 
