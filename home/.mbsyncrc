@@ -1,0 +1,33 @@
+Create Both
+Expunge Both
+Fsync no
+Sync All
+SyncState *
+
+IMAPAccount fastmail
+Host mail.messagingengine.com
+User jrhorn424@fastmail.fm
+PassCmd "imappw jrhorn424@fastmail.fm mail.messagingengine.com"
+UseIMAPS yes
+
+IMAPStore fastmail-remote
+Account fastmail
+
+MaildirStore fastmail-local
+# The trailing "/" is important
+Path ~/.mail/
+Inbox ~/.mail/INBOX/
+
+Channel fastmail-inbox
+Master :fastmail-remote:INBOX
+Slave :fastmail-local:INBOX
+
+# Remove `INBOX.` prefix on other mailfolders
+Channel fastmail-rest
+Master :fastmail-remote:INBOX/
+Slave :fastmail-local:
+Pattern * !INBOX/sent
+
+Group fastmail
+Channel fastmail-inbox
+Channel fastmail-rest

@@ -1,5 +1,8 @@
 #!/usr/bin/python
 import re, subprocess
+from sys import argv
+
+account, server = argv[1:]
 
 params = {
   'security': '/usr/bin/security'
