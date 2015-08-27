@@ -17,6 +17,7 @@ localfolders = ~/.mail
 nametrans = nt_local
 
 [Repository Fastmail-Remote]
+maxconnections = 4
 type = IMAP
 remotehost = mail.messagingengine.com
 ssl = yes
