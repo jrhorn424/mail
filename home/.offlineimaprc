@@ -8,7 +8,7 @@ fsync = false
 [Account Fastmail]
 localrepository = Fastmail-Local
 remoterepository = Fastmail-Remote
-postsynchook = notmuch new
+# postsynchook = notmuch new
 status_backend = sqlite
 
 [Repository Fastmail-Local]
