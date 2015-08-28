@@ -12,17 +12,7 @@ alternates     jeff@jrhorn.me hello@jrhorn.me jeffh@generalassemb.ly jeffh@ga.co
 set sendmail      = "/usr/local/bin/msmtp -a fastmail"
 set sendmail_wait = 0
 
-mailboxes +INBOX \
-          +\+SaneBulk \
-          +\+SaneCommunity \
-          +\+SaneDate \
-          +\+SaneDeals \
-          +\+SaneGithub \
-          +\+SaneLater \
-          +\+SaneLearning \
-          +\+SaneNews \
-          +\+SaneSocial \
-          +Notes
+mailboxes `echo ~/.mail/*`
 
 macro index,pager ! "<save-message>$my_junk<enter>"
 
