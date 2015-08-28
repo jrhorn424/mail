@@ -1,3 +1,6 @@
 macro index "\Cs" "<shell-escape>mu index --maildir ~/.mail; read -p'mu query: ' x; \
       mu find --clearlinks --linksdir ~/.mail/mu-search --format links \$x<enter>\
       <change-folder-readonly>~/.mail/mu-search\n" "mu find"
+
+# contacts search
+set query_command="mu cfind --format=mutt-ab '%s'"
