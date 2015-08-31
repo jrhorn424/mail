@@ -8,6 +8,7 @@ bind pager gg top
 bind pager G  bottom
 
 bind  index,pager R group-reply
+macro index,pager - "<change-folder>?<toggle-mailboxes>"
 
 # Saner copy/move dialogs
 macro index,pager C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
