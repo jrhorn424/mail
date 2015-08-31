@@ -7,24 +7,24 @@ bind pager j  next-line
 bind pager gg top
 bind pager G  bottom
 
-bind index,pager R  group-reply
+bind  index,pager R group-reply
 
 # Saner copy/move dialogs
 macro index,pager C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
 macro index,pager M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
-
 macro index,pager y "<save-message>$mbox<enter>" "move message to the archive"
 
 # Sync email
 macro index s "<shell-escape>mbsync -a<enter>"
 
 # Saner change folders
-macro index c "<change-folder>?<toggle-mailboxes>"
+macro index c  "<change-folder>?<toggle-mailboxes>"
 macro index gi "<change-folder>$spoolfile<enter>"
 macro index ga "<change-folder>$mbox<enter>"
 macro index gs "<change-folder>$record<enter>"
 
 # View attachments properly.
-bind attach <return> view-mailcap
+bind  attach <return> view-mailcap
+macro attach S       <save-entry><kill-line>~/Downloads<enter>
 
 macro pager \Cu "|urlview<enter>" "call urlview to open links"
