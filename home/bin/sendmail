@@ -1,0 +1,6 @@
+#!/bin/sh
+
+sendmail="/usr/local/bin/msmtp -a fastmail"
+muttqt="/usr/local/bin/muttqt -f"
+
+tee >`$muttqt` | $sendmail $*

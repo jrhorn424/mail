@@ -8,6 +8,7 @@ Dependencies
 
 * [`mutt`](http://www.mutt.org): mail user agent
 * [`mu`](http://www.djcbsoftware.nl/code/mu/): full-text search and contact search
+* [`muttqt`](https://github.com/tgray/muttqt): sent-mail address completion, wrapper for mu
 * [`isync/mbsync`](http://isync.sourceforge.net): synchronize IMAP accounts
 * [`msmtp`](http://msmtp.sourceforge.net): SMTP client and mail relay
 
@@ -18,6 +19,15 @@ Installation
 homeshick clone jrhorn424/mail
 homeshick cd mail
 ./install
+```
+
+Post-installation
+-----------------
+
+You may wish to generate a sent-mail database for `muttqt`. Sync with your IMAP server and then change to your "Sent Mail" folder.
+
+```
+for $email in $(\ls $PWD); do muttqt -f $email; done
 ```
 
 See Also

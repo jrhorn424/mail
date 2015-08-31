@@ -3,4 +3,4 @@ macro index "\Cs" "<shell-escape>mu index --maildir ~/.mail; read -p'mu query: '
       <change-folder-readonly>~/.mail/mu-search\n" "mu find"
 
 # contacts search
-set query_command="mu cfind --format=mutt-ab '%s'"
+set query_command="muttqt -q '%s'"
