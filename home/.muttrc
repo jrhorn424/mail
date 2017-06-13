@@ -43,4 +43,6 @@ macro browser q '<exit><quit>'
 # Display online help
 macro index,pager H "<shell-escape>w3m /usr/local/share/doc/mutt/manual.html<enter>" "Show Mutt documentation"
 
+set editor='vim + -c "setlocal nolist wrapmargin=0 textwidth=0 wrap linebreak"  -c "/^$"'
+
 push <show-version>

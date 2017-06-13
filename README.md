@@ -24,6 +24,13 @@ homeshick cd mail
 Post-installation
 -----------------
 
+To sync mail for the first time:
+
+```
+homeshick cd mail
+./sync
+```
+
 You may wish to generate a sent-mail database for `muttqt`. Sync with your IMAP server and then change to your "Sent Mail" folder.
 
 ```

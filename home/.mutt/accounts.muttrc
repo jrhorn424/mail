@@ -9,7 +9,7 @@ set realname = "Jeffrey Horn"
 set from     = "jeff@jrhorn.me"
 alternates     jeff@jrhorn.me hello@jrhorn.me jeffh@generalassemb.ly jeffh@ga.co
 
-set sendmail      = "sendmail"
+set sendmail      = "sendmail -a fastmail"
 set sendmail_wait = 0
 
 mailboxes `echo ~/.mail/*`
